@@ -12,10 +12,11 @@ public partial class AdminGeneralPageAccueil : System.Web.UI.Page
         if ((String)Session["AdminGeneral"] == null)
             Response.Redirect("AdminGeneral.aspx");
     }
-     protected void LinkButton1_Click1(object sender, EventArgs e)
-    {
-        Session.Remove("AdminGeneral");
-        Response.Redirect("AdminGeneral.aspx");
-    }
-    
+
+
+     protected void LinkButton1_Click(object sender, EventArgs e)
+     {
+         Session.Remove("AdminGeneral");
+         Response.Redirect("AdminGeneral.aspx");
+     }
 }

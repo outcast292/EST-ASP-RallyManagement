@@ -9,7 +9,8 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if ((String)Session["AdminGeneral"] == null)
+            Response.Redirect("AdminGeneral.aspx");
     }
     protected void LinkButton1_Click(object sender, EventArgs e)
     {

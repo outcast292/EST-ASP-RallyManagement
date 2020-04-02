@@ -23,7 +23,7 @@ public class CCnx
     { }
     public void Open()
     {
-        S = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Othmane Mdarhri\\Documents\\Visual Studio 2013\\Projects\\GestionDesRallyes.mdf;Integrated Security=True;User Instance=True";
+        S = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Othmane Mdarhri\\Documents\\Visual Studio 2013\\Projects\\GestionDesRallyes.mdf;Integrated Security=True;";
         Con = new SqlConnection(S);
         Con.Open();
     }

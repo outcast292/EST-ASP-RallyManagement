@@ -12,7 +12,7 @@
         <div style="width: 20%">
 
 
-            <asp:LinkButton ID="LinkButton1" runat="server">Se deconnecter</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Se deconnecter</asp:LinkButton>
 
 
         </div>
