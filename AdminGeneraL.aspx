@@ -40,7 +40,7 @@
                                 <label for="Tpass">Mot de Passe:</label>
                             </td>
                             <td class="auto-style3">
-                                <asp:TextBox ID="Tpass" runat="server" Width="260px"></asp:TextBox>
+                                <asp:TextBox ID="Tpass" runat="server" TextMode="Password" Width="260px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>

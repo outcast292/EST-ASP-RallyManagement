@@ -25,7 +25,7 @@
 
         <asp:Panel ID="Panel3" runat="server" BackColor="#CCCCCC" Height="100%" Width="20%" Direction="LeftToRight" HorizontalAlign="Center" Style="float: left;" BorderColor="Black" BorderStyle="Solid">
             <div style="margin-top: 20%;">
-                <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Large" Font-Underline="True">Inscriptions admin rallyes</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/InscriptionAdminRallye.aspx">Inscriptions admin rallyes</asp:HyperLink>
             </div>
             <div style="margin-top: 20%;">
                 <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/AdminGeneral.aspx">Administrateur Generale</asp:HyperLink>
