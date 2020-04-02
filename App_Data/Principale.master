@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principale.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 736px">
+    
+    <asp:Panel ID="Panel1" runat="server" BackColor="#CCCCCC" Height="30%">
+        <asp:Image ID="Image3" runat="server" Height="100%"  ImageUrl="~/images/racingFlag.png" Width="25%" />
+        <div style="text-align: center;width:50%;display:inline-block; position: relative; top: -90px; left: 0px; height: 59px; margin-left: auto; margin-right: auto; margin-top: auto;" >
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="28pt"   Text="Gestions des Admins"></asp:Label>
+        </div>
+        <asp:Image ID="Image2" runat="server" Height="100%" Width="24%" ImageUrl="~/images/racingFlag.png" />
+
+    </asp:Panel>
+    <asp:Panel ID="Panel2" runat="server" BackColor="Black" Height="16px" Width="100%">
+    </asp:Panel>
+    <div  style="height:70%">
+
+        <asp:Panel ID="Panel3" runat="server" BackColor="#CCCCCC" Height="100%" Width="20%" Direction="LeftToRight" HorizontalAlign="Center" Style="float: left;" BorderColor="Black" BorderStyle="Solid">
+            <div style="margin-top: 20%;">
+                <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Large" Font-Underline="True">Inscriptions admin rallyes</asp:HyperLink>
+            </div>
+            <div style="margin-top: 20%;">
+                <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/AdminGeneral.aspx">Administrateur Generale</asp:HyperLink>
+            </div>
+        </asp:Panel>
+        <asp:Panel ID="Panel4" runat="server" Style="float: left;" Width="79%" Height="100%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+
+    </div>
+
+
+
+</body>
+</html>

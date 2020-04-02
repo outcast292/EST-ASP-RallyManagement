@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/App_Data/Principale.master" AutoEventWireup="true" CodeFile="GestionAdminGeneral.master.cs" Inherits="MasterPage" %>
+
+
+
+        
+ 
+          <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     
+            <asp:Panel ID="Panel4" runat="server" BackColor="#CCCCCC" Height="100%" Width="20%" Direction="LeftToRight" HorizontalAlign="Center" Style="float: left;" BorderColor="#333333" BorderStyle="Solid">
+                <div>
+                    <div style="margin-top: 20%;">
+                        <asp:Label ID="Label2" runat="server" Text="Administrateur Generale" Font-Underline="False"></asp:Label>
+                    </div>
+                    <div style="border-style: dotted; margin-top: 20%;">
+                        <asp:Label ID="Label3" runat="server" Text="Label">Gestions des Admins Rallye</asp:Label>
+                        <div style="margin-top: 5%;">
+                            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Large" Font-Underline="True">Valider admin rallye</asp:HyperLink>
+                        </div>
+                        <div style="margin-top: 10%;">
+                            <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/AjouterAdminRallye.aspx">Ajouter admin rallyes</asp:HyperLink>
+                        </div>
+                        <div style="margin-top: 10%;">
+                            <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="Large" Font-Underline="True">Supprimer admin rallyes</asp:HyperLink>
+                        </div>
+                        <div style="margin-top: 10%;">
+                            <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="Large" Font-Underline="True">Modifier admin rallyes</asp:HyperLink>
+                        </div>
+                    </div>
+                </div>
+            </asp:Panel>
+            <asp:Panel ID="Panel5" runat="server"  Height="100%" Width="79%" Direction="LeftToRight" HorizontalAlign="Center" Style="float: left;">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </asp:Panel>
+</asp:Content>
+            
+             
