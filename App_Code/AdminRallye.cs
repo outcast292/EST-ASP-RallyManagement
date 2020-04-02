@@ -14,7 +14,7 @@ using System.Web.UI.WebControls.WebParts;
 public class AdminRallye
 {
 
-    private string LonginAdminRallye;
+    private string LoginAdminRallye;
     private string MotDePasse;
     private string NomAdmin;
     private string PrenomAdmin;
@@ -24,11 +24,11 @@ public class AdminRallye
     { }
     public void SetLonginAdminRallye(string LonginAdminRallye)
     {
-        this.LonginAdminRallye = LonginAdminRallye;
+        this.LoginAdminRallye = LonginAdminRallye;
     }
     public string GetLonginAdminRallye()
     {
-        return this.LonginAdminRallye;
+        return this.LoginAdminRallye;
     }
     public void SetMotDePasse(string MotDePasse)
     {
@@ -66,20 +66,20 @@ public class AdminRallye
     {
         CCnx OCnx = new CCnx();
         OCnx.Open();
-        OCnx.Consultation("insert into AdminRallye values('" + this.LonginAdminRallye + "','" + this.MotDePasse + "','" + this.NomAdmin + "','" + this.PrenomAdmin + "','" + this.DateNaissance + "')");
+        OCnx.Consultation("insert into AdminRallye values('" + this.LoginAdminRallye + "','" + this.MotDePasse + "','" + this.NomAdmin + "','" + this.PrenomAdmin + "','" + this.DateNaissance + "')");
     }
     public void ajouter1()
     {
         CCnx OCnX = new CCnx();
         OCnx.Open();
-        OCnx.Consultation("insert into TempAdminRallye values('" + this.LonginAdminRallye + "','" + this.MotDePasse + "','" + this.NomAdmin + "','" + this.PrenomAdmin + "','" + this.DateNaissance + "')");
+        OCnx.Consultation("insert into TempAdminRallye values('" + this.LoginAdminRallye + "','" + this.MotDePasse + "','" + this.NomAdmin + "','" + this.PrenomAdmin + "','" + this.DateNaissance + "')");
     }
 
     public void supprimer1()
     {
         CCnx OCnx = new CCnx();
         OCnx.Open();
-        OCnx.Consultation("delete from TempAdminRallye where LonginAdminRallye = '" + this.LonginAdminRallye + "'");
+        OCnx.Consultation("delete from TempAdminRallye where LoginAdminRallye = '" + this.LoginAdminRallye + "'");
     }
     string ss;
     DataRow row;
@@ -87,7 +87,7 @@ public class AdminRallye
     {
         OCnx = new CCnx();
         OCnx.Open();
-        OCnx.Consultation("select count(*) as p from AdminRallye where LonginAdminRallye = '" + this.LonginAdminRallye + "' and MotDePasse = '" +       this.MotDePasse + "'");
+        OCnx.Consultation("select count(*) as p from AdminRallye where LoginAdminRallye = '" + this.LoginAdminRallye + "' and MotDePasse = '" +       this.MotDePasse + "'");
         row = OCnx.Tab.Rows[0];
         ss = row[0].ToString();
         if (ss == "0")

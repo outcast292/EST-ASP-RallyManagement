@@ -14,7 +14,7 @@
                     <div style="border-style: dotted; margin-top: 20%;">
                         <asp:Label ID="Label3" runat="server" Text="Label">Gestions des Admins Rallye</asp:Label>
                         <div style="margin-top: 5%;">
-                            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Large" Font-Underline="True">Valider admin rallye</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/ValiderAdminRallye.aspx">Valider admin rallye</asp:HyperLink>
                         </div>
                         <div style="margin-top: 10%;">
                             <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/AjouterAdminRallye.aspx">Ajouter admin rallyes</asp:HyperLink>
