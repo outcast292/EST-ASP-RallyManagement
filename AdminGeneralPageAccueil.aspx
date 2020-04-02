@@ -16,6 +16,15 @@
 
 
         </div>
+        <div>
+            <br />
+            <br />
+            <br />
+            <h2 style="text-align:center;">Page Reservé a l'administrateur Generale des Rallyes</h2>
+
+        </div>
+
+
 
 
 
