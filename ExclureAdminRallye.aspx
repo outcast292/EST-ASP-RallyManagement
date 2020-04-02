@@ -10,7 +10,7 @@
         <br />
         <br />
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="LoginAdminRallye" DataSourceID="SqlDataSource1" Width="90%" CellPadding="4" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" AllowSorting="True">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="LoginAdminRallye" DataSourceID="SqlDataSource1" Width="90%" CellPadding="4" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" AllowSorting="True" AllowPaging="True">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" />

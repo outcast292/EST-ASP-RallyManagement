@@ -23,7 +23,7 @@
                             <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/ExclureAdminRallye.aspx">Supprimer admin rallyes</asp:HyperLink>
                         </div>
                         <div style="margin-top: 10%;">
-                            <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="Large" Font-Underline="True">Modifier admin rallyes</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="Large" Font-Underline="True" NavigateUrl="~/ModifierAdminRallye.aspx">Modifier admin rallyes</asp:HyperLink>
                         </div>
                     </div>
                 </div>
