@@ -23,7 +23,8 @@ public class CCnx
     { }
     public void Open()
     {
-        S = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Othmane Mdarhri\\Documents\\Visual Studio 2013\\Projects\\GestionDesRallyes.mdf;Integrated Security=True;";
+        // S = "Data Source=.\\SQLEXPRESS;AttachDbFilename=~\\App_Data\\GestionDesRallyes.mdf;Integrated Security=True;";
+        S = "Data Source=.\\SQLEXPRESS;AttachDbFilename=" + System.Web.HttpContext.Current.Server.MapPath("App_Data/GestionDesRallyes.mdf") + ";Integrated Security=True;";
         Con = new SqlConnection(S);
         Con.Open();
     }
